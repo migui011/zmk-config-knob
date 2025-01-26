@@ -1,0 +1,14 @@
+file_format: "1"
+id: knob
+name: knob
+type: shield
+url: https://github.com/migui011/zmk-config-knob
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - knob_left
+  - knob_right
