@@ -1,14 +1,14 @@
-if SHIELD_knob_LEFT
+if SHIELD_KNOB_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "knob"
+    default "Knob"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_knob_LEFT || SHIELD_knob_RIGHT
+if SHIELD_KNOB_LEFT || SHIELD_KNOB_RIGHT
 
 config ZMK_SPLIT
     default y
