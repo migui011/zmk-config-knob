@@ -1,5 +1,4 @@
 
-
 #include "knob.dtsi"
 
 &kscan0 {
