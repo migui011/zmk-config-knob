@@ -41,7 +41,7 @@
             bindings = <
 		   &trans                                                                                                           &trans
 &kp N1     &kp N2    &kp N3    &kp N4     &kp N5        &trans  &trans  &kp N6            &kp N7             &kp N8         &kp N9            &kp N0
-&kp TILDE  &trans    &kp UP    &trans     &trans        &trans  &to 0   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp MINUS         &kp EQUAL
+&kp TILDE  &trans    &kp UP    &bt BT_CLR &bt BT_SEL    &trans  &to 0   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp MINUS         &kp EQUAL
 &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_WIN                  &trans            &trans             &trans         &kp SINGLE_QUOTE  &trans
                                           &trans        &trans  &trans  &trans
             >;

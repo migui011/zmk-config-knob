@@ -6,7 +6,6 @@ url: https://github.com/migui011/zmk-config-knob
 requires: [pro_micro]
 features:
   - keys
-  - encoder
 siblings:
   - knob_left
   - knob_right
