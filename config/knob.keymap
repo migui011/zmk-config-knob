@@ -3,14 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        printscreen {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <34 35>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -27,9 +19,9 @@
 
         num_layer {
             bindings = <
-		&trans                                                                                                         	  &trans
-&kp N1  &kp N2     &kp N3    &kp N4            &kp N5             &to 2   &trans  &kp N6         	&kp N7     &kp N8     &kp N9  &kp N0
-&none   &kp TILDE  &kp UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &to 0   &kp BACKSLASH  	&kp MINUS  &kp EQUAL  &trans  &kp SEMI
+		&trans                                                                                                         	  &kp PSCRN	
+&kp N1  &kp N2     &kp N3    &kp N4            &kp N5             &trans  &trans  &kp N6         	&kp N7     &kp N8     &kp N9  &kp N0
+&none   &kp TILDE  &kp UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &to 2	  &to 0   &kp BACKSLASH  	&kp MINUS  &kp EQUAL  &none   &kp SEMI
 &none   &kp LEFT   &kp DOWN  &kp RIGHT         &kp LEFT_WIN                       &kp SINGLE_QUOTE  &none      &kp COMMA  &kp DOT &kp FSLH
                                                &trans             &trans  &trans  &trans
             >;
@@ -37,7 +29,7 @@
 
         bt_layer {
             bindings = <
-	   &none                                                                               &none
+	   &kp N2                                                                              &kp 2
 &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &none   &none   &none  &none  &none  	   &bt BT_CLR_ALL &bt BT_CLR
 &none  &none  &none  &bt BT_DISC 0 &bt BT_DISC 1 &none   &to 0   &none  &none  &none       &none  		  &none
 &none  &none  &none	 &none         &none                         &none  &none  &bt BT_NXT  &bt BT_PRV 	  &none
