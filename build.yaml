@@ -31,7 +31,7 @@ include:
     
    
     
-  - board: seeduino_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: knob_dongle
   - board: seeeduino_xiao_ble
     shield: settings_reset
