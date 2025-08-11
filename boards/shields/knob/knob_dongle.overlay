@@ -2,8 +2,6 @@
 #include "knob.dtsi"
 
 
-};
-
 / {
     chosen {
         zmk,kscan = &mock_kscan;
