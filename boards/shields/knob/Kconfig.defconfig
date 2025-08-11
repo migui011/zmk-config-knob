@@ -1,4 +1,4 @@
-if SHIELD_KNOB_LEFT
+if SHIELD_KNOB_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "Knob"
@@ -8,9 +8,12 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_KNOB_LEFT || SHIELD_KNOB_RIGHT
+if SHIELD_KNOB_DONGLE || SHIELD_KNOB_LEFT || SHIELD_KNOB_RIGHT
 
 config ZMK_SPLIT
     default y
+	
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
 
 endif
